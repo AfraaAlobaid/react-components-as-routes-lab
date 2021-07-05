@@ -7,13 +7,12 @@ const Movies = () => {
         <h1>Movies Page</h1>
         {movies.map(movie => <div>
           <h2>Name: {movie.title}</h2>
-          <div> Time: {movie.time} </div>
-          <div> Genre: 
+          Time: {movie.time}
+          {"\n"}
+          Genre: 
           <ul>
             {movie.genres.map(item => <li>{item}</li>)}
           </ul>
-          </div>
-
         </div>)}
 
     </div>
